@@ -1,0 +1,26 @@
+mybatis:
+  typeAliasesPackage: org.spring.springboot.domain
+  mapperLocations: classpath:mapper/*.xml
+  showSql: true
+spring:
+  datasource:
+    driverClassName: net.ucanaccess.jdbc.UcanaccessDriver
+    url: jdbc:ucanaccess://D:/ZSBmis/ZSBData.mdb
+server:
+  port: 8080
+logging:
+  level:
+    root: info
+    org.springframework: error
+    org.mybatis: error
+    cn.njit.edu: debug
+    com.zaxxer.hikari: error
+    com.deepoove.poi: warn
+print:
+  printerName: Microsoft Print to PDF
+  maxQueuedJobCount: 5
+  wordtpl: template\录取通知书模板.docx
+  photo:
+    path: F:\code\ZSBmis\kszp
+    width: 100
+    height: 120

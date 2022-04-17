@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.njit.edu.dao.StudentMapper">
+
+    <select id="listAll" resultType="cn.njit.edu.entity.Student" >
+        select  *  from lqmd order by sno asc;
+    </select>
+    <select id="filterBySm" resultType="cn.njit.edu.entity.Student" >
+        select  *  from lqmd <if test=" sm != null "> where SM=#{sm}</if> order by sno asc;
+    </select>
+    <select id="getUniqueSM" resultType="String" >
+        select  distinct SM  from  lqmd;
+    </select>
+
+</mapper>

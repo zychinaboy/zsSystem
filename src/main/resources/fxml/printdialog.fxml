@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <header>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="358.0">
+         <children>
+            <ProgressBar fx:id="pb" layoutX="6.0" layoutY="10.0" prefHeight="18.0" prefWidth="343.0" progress="0.0" />
+            <Button fx:id="btnCancel" layoutX="139.0" layoutY="59.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="取消" />
+            <Label fx:id="lbMessage" layoutX="14.0" layoutY="37.0" prefHeight="15.0" prefWidth="331.0" text="状态" />
+         </children></AnchorPane>
+    </header>
+
+</DialogPane>
